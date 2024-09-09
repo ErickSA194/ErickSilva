@@ -56,42 +56,43 @@
         <h1>Segundo Projeto</h1>
     <div class="calculadora">
         <h1>calculadora</h1>
-        <p id="resultado">resultado</p>
+        <p id="resultado"></p>
         <table>
             <tr>
                 <td><button class="botao">C</button></td>
                 <td><button class="botao"><</button></td>
-                <td><button class="botao">/</button></td>
-                <td><button class="botao">X</button></td>
+                <td><button class="botao"  onclick="adicionar('/')">/</button></td>
+                <td><button class="botao"  onclick="adicionar('X')">X</button></td>
             </tr>
             <tr>
                 <td><button class="botao" onclick="adicionar('7')">7</button></td>
                 <td><button class="botao"  onclick="adicionar('8')">8</button></td>
                 <td><button class="botao"  onclick="adicionar('9')">9</button></td>
-                <td><button class="botao">-</button></td>
+                <td><button class="botao" onclick="adicionar('-')">-</button></td>
             </tr>
             <tr>
                 <td><button class="botao"  onclick="adicionar('4')" >4</button></td>
                 <td><button class="botao"  onclick="adicionar('5')">5</button></td>
                 <td><button class="botao"  onclick="adicionar('6')">6</button></td>
-                <td><button class="botao">+</button></td>
+                <td><button class="botao" onclick="adicionar('+')">+</button></td>
             </tr>
             <tr>
                 <td><button class="botao"  onclick="adicionar('1')">1</button></td>
                 <td><button class="botao"  onclick="adicionar('2')">2</button></td>
                 <td><button class="botao"  onclick="adicionar('3')">3</button></td>
-                <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
+                <td rowspan="2"><button class="botao" style="height: 106px;" onclick="adicionar('=')">=</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button class="botao" style="width: 106px;">0</button></td>
-                <td><button class="botao">.</button></td>
+                <td colspan="2"><button class="botao" style="width: 106px;" onclick="adicionar('0')">0</button></td>
+                <td><button class="botao" onclick="adicionar('.')">.</button></td>
             </tr>
         </table>
     </div>
 </div>
 <script>
     function adicionar(num){
-      getElementById('resultado').innerHTML =num
+      const numero = document.getElementById('resultado').innerHTML;
+      document.getElementById('resultado').innerHTML = numero + num
 
     }
 </script>
