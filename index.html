@@ -59,7 +59,7 @@
         <p id="resultado"></p>
         <table>
             <tr>
-                <td><button class="botao">C</button></td>
+                <td><button class="botao"onclick="clean()">C</button></td>
                 <td><button class="botao"><</button></td>
                 <td><button class="botao"  onclick="adicionar('/')">/</button></td>
                 <td><button class="botao"  onclick="adicionar('X')">X</button></td>
@@ -94,6 +94,9 @@
       const numero = document.getElementById('resultado').innerHTML;
       document.getElementById('resultado').innerHTML = numero + num
 
+    }
+    function clean(){
+        document.getElementById('resultado').innerHTML = "";
     }
 </script>
 </body>
