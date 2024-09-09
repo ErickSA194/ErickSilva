@@ -14,17 +14,41 @@
             height: 100vh;
             color: azure;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
-        .calculadora{
+        .calculadora {
             position: absolute;
             background-color: black;
-            top:50%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%,50%);
+            transform: translate(-50%, -50%);
             border-radius: 15px;
             padding: 15px;
+}
+        .botao {
+            width: 50px; 
+            height: 50px; 
+            font-size: 25px;
+            cursor: pointer;
+            background-color: rgb(129, 70, 70); 
+            border: none;
+            color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+            margin: 3pxs;
+}
+        .botao:hover{
+            background-color: black;
         }
-
+        #resultado{
+            width: 207px;
+            background-color: white;
+            height: 30px;
+            margin: 5px;
+            font-size: 25px;
+            color: black;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -50,17 +74,17 @@
                 <td><button class="botao">4</button></td>
                 <td><button class="botao">5</button></td>
                 <td><button class="botao">6</button></td>
-                <td><button>+</button></td>
+                <td><button class="botao">+</button></td>
             </tr>
             <tr>
                 <td><button class="botao">1</button></td>
                 <td><button class="botao">2</button></td>
                 <td><button class="botao">3</button></td>
-                <td rowspan="2"><button class="botao">=</button></td>
+                <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button class="botao">0</button></td>
-                <td><button>.</button class="botao"></td>
+                <td colspan="2"><button class="botao" style="width: 106px;">0</button></td>
+                <td><button class="botao">.</button></td>
             </tr>
         </table>
     </div>
