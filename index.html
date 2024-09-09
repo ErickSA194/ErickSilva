@@ -65,21 +65,21 @@
                 <td><button class="botao">X</button></td>
             </tr>
             <tr>
-                <td><button class="botao">7</button></td>
-                <td><button class="botao">8</button></td>
-                <td><button class="botao">9</button></td>
+                <td><button class="botao" onclick="adicionar('7')">7</button></td>
+                <td><button class="botao"  onclick="adicionar('8')">8</button></td>
+                <td><button class="botao"  onclick="adicionar('9')">9</button></td>
                 <td><button class="botao">-</button></td>
             </tr>
             <tr>
-                <td><button class="botao">4</button></td>
-                <td><button class="botao">5</button></td>
-                <td><button class="botao">6</button></td>
+                <td><button class="botao"  onclick="adicionar('4')" >4</button></td>
+                <td><button class="botao"  onclick="adicionar('5')">5</button></td>
+                <td><button class="botao"  onclick="adicionar('6')">6</button></td>
                 <td><button class="botao">+</button></td>
             </tr>
             <tr>
-                <td><button class="botao">1</button></td>
-                <td><button class="botao">2</button></td>
-                <td><button class="botao">3</button></td>
+                <td><button class="botao"  onclick="adicionar('1')">1</button></td>
+                <td><button class="botao"  onclick="adicionar('2')">2</button></td>
+                <td><button class="botao"  onclick="adicionar('3')">3</button></td>
                 <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
             </tr>
             <tr>
@@ -89,5 +89,11 @@
         </table>
     </div>
 </div>
+<script>
+    function adicionar(num){
+      getElementById('resultado').innerHTML =num
+
+    }
+</script>
 </body>
 </html>
